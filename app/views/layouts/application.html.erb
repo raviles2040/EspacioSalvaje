@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ESPACIO SALVAJE</title>
+  <link href="https://fonts.googleapis.com/stylesheets?family=Roboto" rel="stylesheet"> 
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <!-- Bootstrap core stylesheets -->
+  <link href="vendor/bootstrap/stylesheets/bootstrap.min.stylesheets" rel="stylesheet">
+    <!-- Latest compiled and minified stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/stylesheets/bootstrap.min.stylesheets">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="../JS/functions.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+ <div class="jumbotron jumbotron-fluid" style="padding:0px;">
+    <header>
+      <%= render "partials/navigation" %>
+    </header>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert%></p>
+  </div>
+  <%= yield %>
+</body>
+</html>

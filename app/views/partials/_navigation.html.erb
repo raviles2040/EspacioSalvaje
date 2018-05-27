@@ -1,0 +1,24 @@
+<nav class="be-red white large-padding"> 
+    <ul class="no-list row center-xs middle-xs nav nav-pills">  
+    <h1 class="no-margin" id="logo"> <%= link_to "ESPACIO SALVAJE", root_path %> </h1>
+    <li class="col-md nav-item">
+        <%= link_to "Artículos", articles_path %>
+    </li>
+    <li class="col-md nav-item">
+        <%= link_to "Crear artículo", new_article_path %>
+    </li>
+    <% if user_signed_in? %>
+        <h4>Bienvenido <%= current_user.email %></h4>
+        <li class="col-md nav-item">
+        <%= link_to "Cerrar sesión" , destroy_user_session_path , method: :delete %>
+        </li>
+    <%else%>
+        <li class="col-md nav-item">
+        <%= link_to "Iniciar sesión", new_user_session_path%>
+        </li>
+        <li class="col-md nav-item">
+        <%= link_to "Crear cuenta", new_user_registration_path%>
+        </li>
+    <%end%>
+    </ul>
+</nav> 

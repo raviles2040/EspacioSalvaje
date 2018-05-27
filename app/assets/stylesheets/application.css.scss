@@ -1,0 +1,153 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+.articles {
+    display: inline-grid;
+    flex-flow: column;
+    margin: 4vh;
+    box-shadow: 1px 1px 6px #222;
+    border-radius: 1vh;
+    width: 18vw;
+    padding: 1vh;
+    z-index: 0;
+    background-color: white;
+    transition: transform 0.5s;
+}
+.articles:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #F27616;
+    animation: enable 0.5s;
+}
+.body{
+    width: 100%;
+    height: 100%;
+}
+
+
+@keyframes drag {
+    0% {
+        box-shadow: none;
+        opacity: 1;
+    }
+    50% {
+        box-shadow: none;
+        opacity: 0.5;
+    }
+    100% {
+        box-shadow: none;
+        opacity: 1;
+    }
+}
+
+@keyframes enable {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.articles button {
+    margin: 2px;
+    width: auto;
+    font-weight: bold;
+}
+.articles button:hover {
+    cursor: pointer;
+    transition: all 0.33s;
+}
+
+.article {
+    display: inline-grid;
+    flex-flow: column;
+    margin: 4vh;
+    box-shadow: 1px 1px 6px #222;
+    border-radius: 1vh;
+    width: 18vw;
+    align-content: center;
+    padding: 1vh;
+    z-index: 0;
+    background-color: white;
+    transition: transform 0.5s;
+}
+.navButtons {
+    background-color: cyan;
+    box-shadow: 1px 1px 6px #222;
+    transition: transform 0.5s;
+    border-radius: 30%;
+    width: 20%;
+    color: #F27616;
+}
+.navButtons button:hover {
+    cursor: pointer;
+    transition: all 0.33s;
+}
+.no-margin{
+    margin:10px;
+}
+.btn {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    text-transform:uppercase;
+    cursor:pointer;
+    font-size:1.2em;
+    padding: 10px 12px;
+}
+.top-space{
+    margin-top: 1em;
+}
+.red{
+    color: red !important;
+}
+.green{
+    color:green !important;
+}
+.MamiferoBackground{
+    width: 100%;
+    height:100%;
+    border-radius: 30px;
+    box-shadow: 1px 1px 6px #222;
+    background-image: url('./IMG/mamifero.png');
+}
+.AveBackground{
+    width: 100%;
+    height:100%;
+    border-radius: 30px;
+    box-shadow: 1px 1px 6px #222;
+    background-image: url('./IMG/aves.jpg');
+}
+.AnfibioBackground{
+    width: 100%;
+    height:100%;
+    border-radius: 30px;
+    box-shadow: 1px 1px 6px #222;
+    background-image: url('./IMG/anfibio.jpg');
+}
+.ReptilBackground{
+    width: 100%;
+    height:100%;
+    border-radius: 30px;
+    box-shadow: 1px 1px 6px #222;
+    background-image: url('./IMG/reptiles.jpg');
+}
+

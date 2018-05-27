@@ -1,0 +1,25 @@
+<h1><%= name %></h1>
+<%= form_for(@article) do |f| %>
+    <% @article.errors.full_messages.each do |message| %>
+        <div class="be-red white top-space">
+            * <%= message %>
+        </div>
+    <%end%>
+    <div class="field">
+        <%= f.text_field :title, placeholder:"Título", class:"form_control"%>
+    </div>
+
+    <div class="field">
+        <%= f.text_area :body, placeholder:"Escribe aquí tu artículo", style:"height:250px;", class:"form-control" %>
+    </div>
+    <div class="field">
+        <%= f.select :categoria,([['Mamifero', 'Mamifero'], ['Reptil', 'Reptil'],['Anfibio','Anfibio'],['Aves','Aves']]) %>
+    </div>
+    <% if user_signed_in? %>
+    <div class="field">
+        <%= f.submit "Guardar" ,class:"btn be-red white"%>
+    </div>
+    <%else%>
+    <h4>NO puedes guardar el artículo ya que no has iniciado sesión</h4>
+    <%end%>
+<%end%>

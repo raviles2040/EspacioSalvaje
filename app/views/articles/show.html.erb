@@ -30,10 +30,8 @@
                 <%end%>
 
             <%= render "comments/form" %>
-    <% if user_signed_in? %>
-     <% if current_user.email == @article.user.email %>
-        <%= link_to "Editar", edit_article_path(@article) ,class:"green" %>
-        <%end%>
+     <% if user_signed_in? %>
+    <%= link_to "Editar", edit_article_path(@article) ,class:"green" %>
     <%end%>
 </div>
 </div>

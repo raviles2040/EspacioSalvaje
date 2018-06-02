@@ -4,11 +4,9 @@
         <%= article.body %>
         <p><%= article.categoria%></p>
         <% if user_signed_in? %>
-            <% if current_user.email == article.user.email %>
-                <div class="field">
-                    <%= link_to "Eliminar", article, method: :delete, class:"red" %>
-                </div>
-            <%end%>
+        <div class="field">
+            <%= link_to "Eliminar", article, method: :delete, class:"red" %>
+        </div>
         <%end%>
     </div>
 </div>

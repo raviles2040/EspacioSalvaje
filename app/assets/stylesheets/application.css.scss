@@ -38,7 +38,6 @@
     height: 100%;
 }
 
-
 @keyframes drag {
     0% {
         box-shadow: none;
@@ -115,21 +114,21 @@
     height:100%;
     border-radius: 30px;
     box-shadow: 1px 1px 6px #222;
-    background-image: url('./IMG/mamifero.png');
+    background-image: url('http://fotosdelanaturaleza.es/wp-content/uploads/2016/05/animals-grass-tigers-1920x1080-13679.jpg');
 }
 .AveBackground{
     width: 100%;
     height:100%;
     border-radius: 30px;
     box-shadow: 1px 1px 6px #222;
-    background-image: url('./IMG/aves.jpg');
+    background-image: url('https://images3.alphacoders.com/207/207559.jpg');
 }
 .AnfibioBackground{
     width: 100%;
     height:100%;
     border-radius: 30px;
     box-shadow: 1px 1px 6px #222;
-    background-image: url('./IMG/anfibio.jpg');
+    background-image: url('https://es.best-wallpaper.net/wallpaper/1920x1080/1702/Nature-animals-frog-leaf_1920x1080.jpg');
 }
 .ReptilBackground{
     width: 100%;
@@ -141,135 +140,17 @@
 .margin-bottom{
     margin-bottom: 0% !important;
 }
-html,body{
-    margin:0px;
-    font-family: 'Roboto', sans-serif;
-    width: 100%;
-    height: 100%;
-}
-.btn {
-    border: none;
-    outline: none;
-    text-transform:uppercase;
-    cursor:pointer;
-    font-size:1.2em;
-    padding: 10px 12px;
-}
-
-.red{
-    color: red !important;
-}
-.green{
-    color:green !important;
-}
-.white{
-    margin-bottom: 0%;
-}
-.large-padding{
-    padding:10px 7px;
-}
-
-.marginElements{
-    background-color: aqua;
-}
-.text-left {
-    text-align: left;
-}
-
-a,a:visited{
-    color: inherit;
+a {
+    color: #007bff;
     text-decoration: none;
-}
-.no-margin{
-    margin:0px;
-}
-
-#logo {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+  }
+  #logo {
     font-size: 2.2em;
-    font-style: oblique;
-}
-.field{
-    margin-top: 1em;
-}
-.form-control{
-    border: none;
-    border-bottom: 1px solid;
-    outline: none;
-    width: 100%;
-    display:block;
-    padding: 10px 0px;
-    font-size: 1.2em;
-}
-.articles {
-    display: inline-grid;
-    margin: 4vh;
-    box-shadow: 1px 1px 6px #222;
-    border-radius: 1vh;
-    width: 18vw;
-    padding: 1vh;
-    z-index: 0;
-    background-color: white;
-    transition: transform 0.5s;
-}
-.articles:hover {
-    cursor: pointer;
-    color: white;
-    background-color: #F27616;
-    animation: enable 0.5s;
-}
-
-
-@keyframes drag {
-    0% {
-        box-shadow: none;
-        opacity: 1;
-    }
-    50% {
-        box-shadow: none;
-        opacity: 0.5;
-    }
-    100% {
-        box-shadow: none;
-        opacity: 1;
-    }
-}
-
-@keyframes enable {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
-.articles button {
-    margin: 2px;
-    width: auto;
-    font-weight: bold;
-}
-.articles button:hover {
-    cursor: pointer;
-    transition: all 0.33s;
-}
-
-.article {
-    display: inline-grid;
-    margin: 4vh;
-    box-shadow: 1px 1px 6px #222;
-    border-radius: 1vh;
-    width: 90%;
-    align-content: center;
-    padding: 1vh;
-    z-index: 0;
-    background-color: white;
-    transition: transform 0.5s;
 }
 .be-red {
-    background-color: #6D78F9;
+    background-color: white;
 }
 
 
